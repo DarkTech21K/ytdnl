@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Replace this with your actual backend URL when hosting
     // e.g., const BACKEND_URL = "https://your-server.com/download";
-    const BACKEND_URL = "http://localhost:5000/download";
+    const BACKEND_URL = "https://ytdnl-kzwx.onrender.com";
 
     function updateStatus(text, type = "normal") {
         statusRegion.classList.remove("hidden");
@@ -92,3 +92,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+

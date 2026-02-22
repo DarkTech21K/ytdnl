@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const ytpb = require('yt-dlp-exec');
 const path = require('path');
 
 const app = express();
@@ -37,3 +36,4 @@ app.get('/download', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server draait op poort ${PORT}`));
+

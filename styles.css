@@ -1,0 +1,126 @@
+/* High Contrast & Big Text Style for Low Vision Users */
+:root {
+    --bg-color: #000000;
+    --text-color: #FFFF00;
+    /* High Contrast Yellow */
+    --input-bg: #222222;
+    --input-border: #FFFF00;
+    --button-bg: #FFFF00;
+    --button-text: #000000;
+    --button-hover: #FFFFFF;
+    --error-color: #FF5555;
+    --success-color: #55FF55;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    font-size: 28px;
+    /* Extremely large base font for short sight */
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    border-bottom: 4px solid var(--text-color);
+    padding-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 25px;
+    font-size: 1.8rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 4px solid var(--input-border);
+    border-radius: 12px;
+}
+
+input[type="url"]:focus {
+    outline: 6px solid #FFFFFF;
+    outline-offset: 4px;
+}
+
+/* Large, high contrast button */
+button {
+    width: 100%;
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--button-hover);
+    outline: 6px solid #FFFFFF;
+    outline-offset: 4px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.status-box {
+    margin-top: 30px;
+    padding: 25px;
+    border: 4px solid var(--text-color);
+    border-radius: 12px;
+    background-color: #111111;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: var(--error-color);
+    border-color: var(--error-color);
+}
+
+.success {
+    color: var(--success-color);
+    border-color: var(--success-color);
+}

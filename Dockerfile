@@ -18,5 +18,7 @@ RUN npm install
 
 COPY . .
 
+RUN yt-dlp -U
 EXPOSE 5000
 CMD ["node", "server.js"]
+
